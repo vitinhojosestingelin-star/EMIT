@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26382a">
+  <meta name="description" content="EMIT — Gerencie seu tempo. Viva seus propósitos.">
+  <title>EMIT — Gerencie seu tempo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="inicio" aria-label="EMIT início">
+        <span class="brand-mark">E</span><span class="brand-name">E M I T</span>
+      </a>
+      <div class="side-caption">SEU ESPAÇO</div>
+      <nav id="sideNav" class="nav-list">
+        <button data-page="inicio" class="nav-item active"><span>⌂</span>Início</button>
+        <button data-page="plano" class="nav-item"><span>▦</span>Plano</button>
+        <button data-page="foco" class="nav-item"><span>◎</span>Foco</button>
+        <button data-page="tela" class="nav-item"><span>▯</span>Tempo de tela</button>
+        <button data-page="habitos" class="nav-item"><span>✿</span>Hábitos</button>
+        <button data-page="metas" class="nav-item"><span>⚑</span>Metas</button>
+        <button data-page="relatorios" class="nav-item"><span>▥</span>Relatórios</button>
+        <button data-page="reflexoes" class="nav-item"><span>❧</span>Reflexões</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <p>“O tempo não é perdido quando é investido em você mesmo.”</p>
+        <button class="nav-item" data-page="configuracoes"><span>⚙</span>Configurações</button>
+        <button class="nav-item" data-page="perfil"><span>♙</span>Perfil</button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button id="mobileMenu" class="icon-button" aria-label="Abrir menu">☰</button>
+        <div class="top-brand"><span class="brand-mark small">E</span><span>EMIT</span></div>
+        <div class="top-actions"><span id="dateLabel"></span><button class="icon-button" title="Notificações" id="notificationsBtn">♧</button><button class="avatar" data-page="perfil" aria-label="Perfil">M</button></div>
+      </header>
+      <div id="pageContent" class="content"></div>
+      <nav class="mobile-nav" id="mobileNav">
+        <button data-page="inicio" class="active"><span>⌂</span>Início</button>
+        <button data-page="plano"><span>▦</span>Plano</button>
+        <button data-page="foco" class="focus-nav"><span>◎</span>Foco</button>
+        <button data-page="relatorios"><span>▥</span>Relatórios</button>
+        <button data-page="perfil"><span>♙</span>Perfil</button>
+      </nav>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
